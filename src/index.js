@@ -9,6 +9,7 @@ import { inngest } from "./inngest/client.js";
 import { onSignup } from "./inngest/functions/on-signup.js";
 import { onTicketCreated } from "./inngest/functions/on-ticket-create.js";
 import dotenv from "dotenv";
+import  checkHealthRoutes from "./routes/checkHealth.route.js"
 
 dotenv.config({
   path: "./.env",
@@ -23,6 +24,7 @@ app.use(cors({
 app.use(express.json());
 
 // Routes
+app.use("/", checkHealthRoutes)
 app.use("/api/auth", userRoutes);
 app.use("/api/ticket", ticketRoutes);
 
