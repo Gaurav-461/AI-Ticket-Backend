@@ -10,7 +10,9 @@ import { onSignup } from "./inngest/functions/on-signup.js";
 import { onTicketCreated } from "./inngest/functions/on-ticket-create.js";
 import dotenv from "dotenv";
 
-dotenv.config()
+dotenv.config({
+  path: "./.env",
+})
 
 const PORT = process.env.PORT || 3000;
 const app = express();
