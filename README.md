@@ -27,7 +27,7 @@ This is the backend for the AI Ticket Assistant project, providing RESTful APIs 
    - Create a `.env` file in the root directory with the necessary configuration (e.g., MongoDB URI, JWT secret, email credentials, Inngest keys).
 3. **Start the server:**
    ```bash
-   npm start
+   npm run dev
    ```
    The server will run on the port specified in your environment variables (default: 3000).
 
