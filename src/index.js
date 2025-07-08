@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(cors({
-  origin: "https://ai-ticket-backend-5pa6.onrender.com",
+  origin: "http://localhost:5173",
 }));
 app.use(express.json());
 
