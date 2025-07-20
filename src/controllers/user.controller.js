@@ -59,7 +59,6 @@ export const signup = async (req, res) => {
 export const login = async (req, res) => {
     try {
         const { email, password } = req.body;
-        console.table({ email, password });
 
         if ([email, password].some((field) => field.trim() === "")) {
             return res
